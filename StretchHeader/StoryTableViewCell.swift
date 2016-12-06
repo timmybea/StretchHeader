@@ -10,6 +10,10 @@ import UIKit
 
 class StoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var headlineLabel: UILabel!
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +23,21 @@ class StoryTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    var newsItem: NewsItem? {
+        didSet {
+            if let item = newsItem {
+                categoryLabel.text = item.category.toString()
+                categoryLabel.textColor = item.category.toColor()
+                headlineLabel.text = item.summary
+            }
+            else
+            {
+                categoryLabel.text = nil
+                headlineLabel.text = nil
+            }
+        }
     }
 
 }

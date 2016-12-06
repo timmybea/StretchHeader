@@ -19,43 +19,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vyv-hv-PPh">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vyv-hv-PPh">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StoryTableViewCell" rowHeight="90" id="otY-4b-UJz" customClass="StoryTableViewCell" customModule="StretchHeader" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StoryTableViewCell" rowHeight="93" id="otY-4b-UJz" customClass="StoryTableViewCell" customModule="StretchHeader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="otY-4b-UJz" id="ZOX-U5-ssm">
-                                            <frame key="frameInset" width="375" height="89"/>
+                                            <frame key="frameInset" width="375" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="349" placeholderIntrinsicHeight="69" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Dg-Zp-yoC">
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="349" placeholderIntrinsicHeight="69" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Dg-Zp-yoC">
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3W-kb-OhB">
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="20" id="QhO-e0-tzd"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Politics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3W-kb-OhB">
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" red="0.14408608378196053" green="0.2850183646820319" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYM-cZ-hSO">
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="50" id="TJh-Cy-J8z"/>
-                                                            </constraints>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protests reveal Trump is a humongous douche bag. He doesn't seem to notice though..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYM-cZ-hSO">
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="g3W-kb-OhB" secondAttribute="trailing" id="1kT-QE-m4d"/>
-                                                        <constraint firstItem="g3W-kb-OhB" firstAttribute="top" secondItem="9Dg-Zp-yoC" secondAttribute="top" id="dOE-EW-c6h"/>
-                                                        <constraint firstItem="g3W-kb-OhB" firstAttribute="leading" secondItem="9Dg-Zp-yoC" secondAttribute="leading" id="hgU-vY-42B"/>
-                                                        <constraint firstAttribute="trailing" secondItem="NYM-cZ-hSO" secondAttribute="trailing" id="pon-Yc-OHu"/>
-                                                        <constraint firstItem="NYM-cZ-hSO" firstAttribute="leading" secondItem="9Dg-Zp-yoC" secondAttribute="leading" id="t1Q-w6-XSP"/>
-                                                        <constraint firstAttribute="bottom" secondItem="NYM-cZ-hSO" secondAttribute="bottom" id="xAc-I0-gyk"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -65,8 +51,16 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="9Dg-Zp-yoC" secondAttribute="bottom" constant="5" id="h8M-vC-ETi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="g3W-kb-OhB" id="l1x-WK-4AC"/>
+                                            <outlet property="headlineLabel" destination="NYM-cZ-hSO" id="bnt-l8-7dK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eye-f2-uHs"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="JRN-kr-vyM"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,6 +71,9 @@
                             <constraint firstItem="Vyv-hv-PPh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="toJ-hD-zjJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Vyv-hv-PPh" id="cs0-aF-lmc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

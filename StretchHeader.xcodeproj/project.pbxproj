@@ -14,6 +14,7 @@
 		B0DE505D1DF748300085C1A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0DE505B1DF748300085C1A7 /* LaunchScreen.storyboard */; };
 		B0DE50691DF748EB0085C1A7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE50681DF748EB0085C1A7 /* TableViewController.swift */; };
 		B0DE506B1DF749970085C1A7 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE506A1DF749970085C1A7 /* StoryTableViewCell.swift */; };
+		B0DE506D1DF7605F0085C1A7 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE506C1DF7605F0085C1A7 /* NewsItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B0DE505E1DF748300085C1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0DE50681DF748EB0085C1A7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B0DE506A1DF749970085C1A7 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		B0DE506C1DF7605F0085C1A7 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B0DE50521DF748300085C1A7 /* AppDelegate.swift */,
+				B0DE506C1DF7605F0085C1A7 /* NewsItem.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0DE50551DF748300085C1A7 /* ViewController.swift in Sources */,
+				B0DE506D1DF7605F0085C1A7 /* NewsItem.swift in Sources */,
 				B0DE50691DF748EB0085C1A7 /* TableViewController.swift in Sources */,
 				B0DE50531DF748300085C1A7 /* AppDelegate.swift in Sources */,
 				B0DE506B1DF749970085C1A7 /* StoryTableViewCell.swift in Sources */,
